@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- profile.html  21 Nov 2019 03:49:30 GMT -->
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Ostore - Atlas Software Park</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/bundles/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
+  <link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+</head>
+
+<body>
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar sticky">
+        <div class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a></li>
+            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                <i data-feather="maximize"></i>
+              </a></li>
+          </ul>
+        </div>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+              class="nav-link nav-link-lg message-toggle"><i data-feather="bell"></i>
+              <span class="badge headerBadge1">
+                6 </span> </a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+              <div class="dropdown-header">
+                Notifications
+                <div class="float-right">
+                  <a href="#">Mark All As Read</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
+											text-white"> <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">John
+                      Deo</span>
+                    <span class="time messege-text">Please check your mail !!</span>
+                    <span class="time">2 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                      Smith</span> <span class="time messege-text">Request for leave
+                      application</span>
+                    <span class="time">5 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-5.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
+                      Ryan</span> <span class="time messege-text">Your payment invoice is
+                      generated.</span> <span class="time">12 Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-4.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
+                      Smith</span> <span class="time messege-text">hii John, I have upload
+                      doc
+                      related to task.</span> <span class="time">30
+                      Min Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
+                      Joshi</span> <span class="time messege-text">Please do as specify.
+                      Let me
+                      know if you have any query.</span> <span class="time">1
+                      Days Ago</span>
+                  </span>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
+                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
+                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
+                      Smith</span> <span class="time messege-text">Client Requirements</span>
+                    <span class="time">2 Days Ago</span>
+                  </span>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png"
+                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+            <div class="dropdown-menu dropdown-menu-right pullDown">
+              <div class="dropdown-title">Hello Sarah Smith</div>
+              <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+										fa-user"></i> Profile
+              </a> <a href="timeline.html" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+                Activities
+              </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                Settings
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="auth-login.html" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> <span
+                class="logo-name">ওস্টোর</span>
+            </a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Main</li>
+            <li class="dropdown active">
+              <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>ড্যাশবোর্ড</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="sell.html" class="nav-link"><i data-feather="shopping-cart"></i><span>বেচা-বিক্রি</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="q_sell.html" class="nav-link"><i data-feather="pocket"></i><span>কুইক সেল</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="stock.html" class="nav-link"><i data-feather="briefcase"></i><span>স্টক</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="sellbook.html" class="nav-link"><i data-feather="book-open"></i><span>বিক্রির খাতা</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="hisab.html" class="nav-link"><i data-feather="command"></i><span>হিসাব খাতা</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="file-text"></i><span>রিপোর্ট</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="sell_report.html">বিক্রির রিপোর্ট</a></li>
+                <li><a class="nav-link" href="loss_profit.html">লাভ-ক্ষতির রিপোর্ট</a></li>
+                <li><a class="nav-link" href="buy_report.html">ক্রয় রিপোর্ট</a></li>
+              </ul>
+            </li>
+            <li class="menu-header">UI Elements</li>
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                  data-feather="shopping-bag"></i><span>পণ্য</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="category.html">পণ্যের ক্যাটাগরি</a></li>
+                <li><a class="nav-link" href="product.html">সকল পণ্য</a></li>
+                <li><a class="nav-link" href="buy.html">পণ্য ক্রয়</a></li>
+                <li><a class="nav-link" href="buy_ladger.html">ক্রয়কৃত লেজার দেখুন</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="customer.html" class="nav-link"><i data-feather="users"></i><span>গ্রাহক তালিকা</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="vendor.html" class="nav-link"><i data-feather="user-check"></i><span>ভেন্ডরদের তালিক</span></a>
+            </li>
+            <li class="menu-header">Accounts</li>
+            <li class="dropdown">
+              <a href="in_ex.html" class="nav-link"><i data-feather="dollar-sign"></i><span>বাড়তি আয়-ব্যয়</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="database"></i><span>ব্যাংক হিসাব</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="bank.html">ব্যাংক যোগ ও ব্যালেন্স দেখুন</a></li>
+                <li><a class="nav-link" href="trans.html">ট্রানসাকশান দেখুন</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="borrowing.html" class="nav-link"><i data-feather="repeat"></i><span>ধার-দেনা</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="blank.html" class="nav-link"><i data-feather="alert-circle"></i><span>পরিচিতি</span></a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row mt-sm-4">
+              <div class="col-12 col-md-12 col-lg-4">
+                <div class="card author-box">
+                  <div class="card-body">
+                    <div class="author-box-center">
+                      <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle author-box-picture">
+                      <div class="clearfix"></div>
+                      <div class="author-box-name">
+                        <a href="#">আমিন মোহাম্মদ</a>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <div class="author-box-description">
+                        <p>
+                          মিথ্যা মানুষ গুলোর কাছ থেকে অনেক কিছু সত্যির শিক্ষা পাওয়া যায়.
+                        </p>
+                      </div>
+                      <div class="mb-2 mt-3">
+                        <div class="text-small font-weight-bold">সামাজিক যোগাযোগ মাধ্যমের লিংক</div>
+                      </div>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-facebook">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-twitter">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="btn btn-social-icon mr-1 btn-instagram">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <div class="w-100 d-sm-none"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Personal Details</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="py-4">
+                      <p class="clearfix">
+                        <span class="float-left">
+                          জন্ম তারিখ
+                        </span>
+                        <span class="float-right text-muted">
+                          30-05-1998
+                        </span>
+                      </p>
+                      <p class="clearfix">
+                        <span class="float-left">
+                          ফোন
+                        </span>
+                        <span class="float-right text-muted">
+                          (+088)123456789
+                        </span>
+                      </p>
+                      <p class="clearfix">
+                        <span class="float-left">
+                          ইমেইল
+                        </span>
+                        <span class="float-right text-muted">
+                          test@example.com
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-8">
+                <div class="card">
+                  <div class="padding-20">
+                    <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#about" role="tab"
+                          aria-selected="true">প্রতিষ্ঠানের তথ্য</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#settings" role="tab"
+                          aria-selected="false">সেটিং</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content tab-bordered" id="myTab3Content">
+                      <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab2">
+                        <div class="section-title">প্রতিষ্ঠানের নাম</div>
+                        <h3>মেসার্স ভাই ভাই শপ</h3>
+                        <div class="section-title">ঠিকানা</div>
+                         <h6>দি ব্ল্যাকহোল এসোসিয়েটস,
+                             ইয়াকুব সুপার মার্কেট (৩য় তলা),
+                             সিনেমা রোড, ভৈরব বাজার।</h6>
+                         <div class="section-title">ফোন</div>
+                         <h6>(+880) 145326543</h6>
+                      </div>
+                      <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="profile-tab2">
+                        <form method="post" class="needs-validation">
+                          <div class="card-header">
+                            <h4>প্রোফাইল তথ্য পরিবর্তন</h4>
+                          </div>
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="form-group col-md-6 col-12">
+                                <label>আপনার নাম লিখুন</label>
+                                <input type="text" class="form-control" placeholder="নাম লিখুন">
+                              </div>
+                              <div class="form-group col-md-6 col-12">
+                                <label>ফোন নাম্বার</label>
+                                <input type="text" class="form-control" placeholder="ফোন">
+                              </div>
+                              <div class="form-group col-12">
+                                <label>আপনার ঠিকানা লিখুন</label>
+                                <input type="text" class="form-control" placeholder="ঠিকানা">
+                              </div>
+                              <div class="form-group col-md-6 col-12">
+                                <label>ইমেইল</label>
+                                <input type="email" class="form-control" placeholder="example@gmail.com">
+                              </div>
+                              <div class="form-group col-md-6 col-12">
+                                <label>জন্ম তারিখ</label>
+                                <input type="date" class="form-control">
+                              </div>
+                              <div class="form-group col-md-6 col-12">
+                                <label>আপনার ছবি আপলোড করুন</label>
+                                <input type="file" class="form-control">
+                              </div>
+                              <div class="form-group col-12">
+                                <label>ফেসবুক প্রোফাইল লিংক</label>
+                                <input type="text" class="form-control" placeholder="https://">
+                              </div>
+                              <div class="form-group col-12">
+                                <label> টুইটার প্রোফাইল লিংক</label>
+                                <input type="text" class="form-control" placeholder="https://">
+                              </div>
+                              <div class="form-group col-12">
+                                <label> ইনস্টাগ্রাম প্রোফাইল লিংক</label>
+                                <input type="text" class="form-control" placeholder="https://">
+                              </div>
+                            </div>
+                            <div class="card-footer text-right">
+                              <button class="btn btn-primary">সংরক্ষন করুন</button>
+                            </div>
+                        </form>
+                        <form method="post" class="needs-validation">
+                            <div class="card-header">
+                              <h4>প্রতিষ্ঠানের তথ্য পরিবর্তন</h4>
+                            </div>
+                            <div class="row">
+                              <div class="form-group col-md-6 col-12">
+                                <label>প্রতিষ্ঠানের নাম লিখুন</label>
+                                <input type="text" class="form-control" placeholder="প্রতিষ্ঠানের নাম">
+                              </div>
+                              <div class="form-group col-md-6 col-12">
+                                <label>প্রতিষ্ঠানের ঠিকানা লিখুন</label>
+                                <input type="text" class="form-control" placeholder="ঠিকানা">
+                              </div>
+                              <div class="form-group col-md-6 col-12">
+                                <label>প্রতিষ্ঠানের ফোন নাম্বার</label>
+                                <input type="text" class="form-control" placeholder="ফোন">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-footer text-right">
+                            <button class="btn btn-primary">সংরক্ষন করুন</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="settingSidebar">
+          <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
+          </a>
+          <div class="settingSidebar-body ps-container ps-theme-default">
+            <div class=" fade show active">
+              <div class="setting-panel-header">আজকের সংক্ষিপ্ত বিবরণী
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">কুইক সেল</h6>
+                <div class="selectgroup layout-color w-50">
+                  <h6 class="font-medium m-b-10" >$ 5500 টাকা</h6>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">নগদ বিক্রি</h6>
+                <div class="selectgroup selectgroup-pills sidebar-color">
+                  <h6 class="font-medium m-b-10">$ 5500 টাকা</h6>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">বাকিতে বিক্রি</h6>
+                <div class="theme-setting-options">
+                  <h6 class="font-medium m-b-10">$ 5500 টাকা</h6>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">কিস্তিতে বিক্রি</h6>
+                <div class="theme-setting-options">
+                  <h6 class="font-medium m-b-10">$ 5500 টাকা</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          <a href="templateshub.net">Templateshub</a></a>
+        </div>
+        <div class="footer-right">
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="assets/bundles/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="assets/bundles/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+  <script src="assets/bundles/summernote/summernote-bs4.js"></script>
+  <!-- Page Specific JS File -->
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>
+</body>
+
+
+<!-- profile.html  21 Nov 2019 03:49:32 GMT -->
+</html>
